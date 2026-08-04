@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form 3 Mathematics — Section A Part 3</title>
+<style>
+:root{
+ --bg:#f4f7fb;--card:#fff;--ink:#18212f;--muted:#667085;
+ --line:#d9e2ef;--accent:#2457d6;--accent2:#0f766e;
+ --good:#137333;--soft:#eef4ff;--warn:#fff8e7;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,"Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+header{background:linear-gradient(135deg,#173b8f,#2457d6);color:#fff;padding:42px 20px 34px}
+header .wrap,main{max-width:1000px;margin:auto}
+h1{margin:0 0 8px;font-size:clamp(28px,4vw,44px)}
+.subtitle{opacity:.92;font-size:17px}
+main{padding:28px 18px 60px}
+.notice{background:var(--warn);border:1px solid #f2d88f;padding:14px 16px;border-radius:14px;margin-bottom:22px}
+.question{background:var(--card);border:1px solid var(--line);border-radius:18px;margin:20px 0;overflow:hidden;box-shadow:0 7px 22px rgba(31,52,90,.07)}
+.qhead{padding:18px 22px;background:var(--soft);border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:center}
+.qnum{min-width:48px;height:48px;border-radius:14px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700;font-size:20px}
+.qtitle{font-size:20px;font-weight:700}
+.content{padding:22px}
+.answer{display:inline-block;background:#eaf7ed;color:var(--good);border:1px solid #b8dfc1;border-radius:999px;padding:7px 13px;font-weight:700;margin:10px 0 18px}
+.lang{border-left:4px solid var(--accent);padding-left:14px;margin:20px 0}
+.lang.zh{border-left-color:#c2410c}
+.lang.ms{border-left-color:var(--accent2)}
+.lang h3{margin:0 0 8px;font-size:18px}
+.formula{background:#f8fafc;border:1px dashed #aebed2;border-radius:12px;padding:12px 14px;font-family:"Cambria Math",serif;font-size:18px;margin:10px 0;overflow-x:auto}
+.tip{background:#f0fdf4;border:1px solid #b7e4c2;border-radius:12px;padding:12px 14px;margin-top:16px;font-weight:600}
+.source-img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:white;padding:8px;margin:8px 0}
+.img-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+ol{padding-left:22px;margin:8px 0} li{margin:5px 0}
+.toolbar{position:sticky;top:0;z-index:5;background:rgba(244,247,251,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 18px}
+.toolbar .inner{max-width:1000px;margin:auto;display:flex;gap:10px;flex-wrap:wrap}
+button{border:1px solid #b8c5d8;background:#fff;color:var(--ink);border-radius:10px;padding:9px 13px;cursor:pointer;font-weight:600}
+button:hover{border-color:var(--accent);color:var(--accent)}
+.hidden{display:none}
+footer{text-align:center;color:var(--muted);padding:24px 10px 40px}
+@media(max-width:650px){.img-row{grid-template-columns:1fr}}
+@media print{.toolbar{display:none}body{background:#fff}.question{box-shadow:none;break-inside:avoid}header{background:#fff;color:#000;border-bottom:2px solid #000}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <h1>Form 3 Mathematics</h1>
+  <div class="subtitle">Section A · Part 3 · Questions 11–15</div>
+  <div class="subtitle">English + 华语 + Bahasa Melayu</div>
+ </div>
+</header>
+
+<div class="toolbar"><div class="inner">
+ <button onclick="setLang('all')">显示全部 / Show All</button>
+ <button onclick="setLang('en')">English</button>
+ <button onclick="setLang('zh')">华语</button>
+ <button onclick="setLang('ms')">Bahasa Melayu</button>
+ <button onclick="window.print()">打印 / Print</button>
+</div></div>
+
+<main>
+<div class="notice">本页依据上传试卷与答案表整理，并保留题目中可读取的原图资料。</div>
+
+<section class="question">
+ <div class="qhead"><div class="qnum">Q11</div><div class="qtitle">Indices · 指数运算 · Indeks</div></div>
+ <div class="content">
+  <div class="img-row">
+   <img class="source-img" src="data:image/png;base64,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" alt="Q11 expression">
+   <img class="source-img" src="data:image/png;base64,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" alt="Q11 answer choices">
+  </div>
+  <p><strong>Question:</strong> Simplify the given algebraic expression involving indices.</p>
+  <p><strong>Soalan:</strong> Permudahkan ungkapan algebra yang melibatkan indeks.</p>
+  <div class="answer">Answer: C · 1 / (3m√n)</div>
+  <div class="formula">
+   (3²m⁴n³ᐟ²) ÷ (27m⁵n²)<br>
+   = 3²⁻³ · m⁴⁻⁵ · n³ᐟ²⁻²<br>
+   = 3⁻¹m⁻¹n⁻¹ᐟ²<br>
+   = 1 / (3m√n)
+  </div>
+  <div class="lang en"><h3>English Explanation</h3><ol>
+   <li>Write 27 as 3³.</li>
+   <li>When dividing powers with the same base, subtract the indices.</li>
+   <li>Convert negative indices to positive indices by moving them to the denominator.</li>
+   <li>Since n¹ᐟ² = √n, the final answer is 1/(3m√n).</li>
+  </ol></div>
+  <div class="lang zh"><h3>华语讲解</h3><ol>
+   <li>先把27写成3³。</li>
+   <li>同底数相除，指数相减。</li>
+   <li>负指数移到分母后变成正指数。</li>
+   <li>n¹ᐟ²就是√n，所以答案是1/(3m√n)。</li>
+  </ol></div>
+  <div class="lang ms"><h3>Penerangan Bahasa Melayu</h3><ol>
+   <li>Tulis 27 sebagai 3³.</li>
+   <li>Apabila membahagi kuasa dengan asas yang sama, tolak indeks.</li>
+   <li>Tukarkan indeks negatif kepada indeks positif dengan memindahkannya ke penyebut.</li>
+   <li>Oleh sebab n¹ᐟ² = √n, jawapan akhir ialah 1/(3m√n).</li>
+  </ol></div>
+  <div class="tip">口诀：同底相除，指数相减；负指数，搬到下面。</div>
+ </div>
+</section>
+
+<section class="question">
+ <div class="qhead"><div class="qnum">Q12</div><div class="qtitle">Significant Figures · 有效数字 · Angka Bererti</div></div>
+ <div class="content">
+  <p><strong>Question:</strong> 168 475 becomes 168 000 when rounded off correct to n significant figures. Determine n.</p>
+  <p><strong>Soalan:</strong> 168 475 menjadi 168 000 apabila dibundarkan kepada n angka bererti. Tentukan n.</p>
+  <div class="answer">Answer: D · n = 3</div>
+  <div class="formula">
+   168 475 → first 3 significant digits: 1, 6, 8<br>
+   Next digit = 4, so 168 stays unchanged<br>
+   Result = 168 000
+  </div>
+  <div class="lang en"><h3>English Explanation</h3><ol>
+   <li>Start counting significant figures from the first non-zero digit.</li>
+   <li>The first three significant figures are 1, 6 and 8.</li>
+   <li>The next digit is 4, so do not round 8 up.</li>
+   <li>Hence, 168 475 rounded to 3 significant figures is 168 000.</li>
+  </ol></div>
+  <div class="lang zh"><h3>华语讲解</h3><ol>
+   <li>从第一个非零数字开始数。</li>
+   <li>前三个有效数字是1、6、8。</li>
+   <li>下一位是4，小于5，所以8不进位。</li>
+   <li>因此 n=3。</li>
+  </ol></div>
+  <div class="lang ms"><h3>Penerangan Bahasa Melayu</h3><ol>
+   <li>Mula mengira dari digit bukan sifar yang pertama.</li>
+   <li>Tiga angka bererti pertama ialah 1, 6 dan 8.</li>
+   <li>Digit seterusnya ialah 4, jadi 8 tidak dibundarkan naik.</li>
+   <li>Maka n=3.</li>
+  </ol></div>
+  <div class="tip">Significant figures: start from the first non-zero digit.</div>
+ </div>
+</section>
+
+<section class="question">
+ <div class="qhead"><div class="qnum">Q13</div><div class="qtitle">x-intercept · x轴截距 · Pintasan-x</div></div>
+ <div class="content">
+  <p><strong>Question:</strong> Determine the x-intercept of the straight line 2y − 3x = 8.</p>
+  <p><strong>Soalan:</strong> Tentukan pintasan-x bagi garis lurus 2y − 3x = 8.</p>
+  <div class="answer">Answer: B · x = −8/3</div>
+  <div class="formula">
+   At the x-intercept, y = 0<br>
+   2(0) − 3x = 8<br>
+   −3x = 8<br>
+   x = −8/3
+  </div>
+  <div class="lang en"><h3>English Explanation</h3><ol>
+   <li>At the x-intercept, the point lies on the x-axis.</li>
+   <li>Therefore, set y=0.</li>
+   <li>Solve the remaining equation for x.</li>
+   <li>The x-intercept is −8/3.</li>
+  </ol></div>
+  <div class="lang zh"><h3>华语讲解</h3><ol>
+   <li>x轴上的点，y一定等于0。</li>
+   <li>把y=0代入方程。</li>
+   <li>解出x。</li>
+   <li>x轴截距是−8/3。</li>
+  </ol></div>
+  <div class="lang ms"><h3>Penerangan Bahasa Melayu</h3><ol>
+   <li>Pada pintasan-x, titik berada pada paksi-x.</li>
+   <li>Oleh itu, gantikan y=0.</li>
+   <li>Selesaikan persamaan untuk mendapatkan x.</li>
+   <li>Pintasan-x ialah −8/3.</li>
+  </ol></div>
+  <div class="tip">口诀：找 x-intercept，令 y=0；找 y-intercept，令 x=0。</div>
+ </div>
+</section>
+
+<section class="question">
+ <div class="qhead"><div class="qnum">Q14</div><div class="qtitle">Ratio Problem · 比例应用 · Masalah Nisbah</div></div>
+ <div class="content">
+  <p><strong>Question:</strong> Balls are divided in the ratio 5:2:9. The sum of the two smaller parts is 6 balls less than the largest part. Find the largest part.</p>
+  <p><strong>Soalan:</strong> Bola dibahagikan dalam nisbah 5:2:9. Jumlah dua bahagian kecil ialah 6 kurang daripada bahagian terbesar. Cari bahagian terbesar.</p>
+  <div class="answer">Answer: A · 27 balls</div>
+  <div class="formula">
+   Smaller parts = 5k + 2k = 7k<br>
+   Largest part = 9k<br>
+   9k − 7k = 6<br>
+   2k = 6 → k = 3<br>
+   Largest part = 9(3) = 27
+  </div>
+  <div class="lang en"><h3>English Explanation</h3><ol>
+   <li>Represent the ratio parts as 5k, 2k and 9k.</li>
+   <li>The two smaller parts total 7k.</li>
+   <li>The largest part is 6 more than 7k, so 9k−7k=6.</li>
+   <li>Find k=3 and calculate 9k=27.</li>
+  </ol></div>
+  <div class="lang zh"><h3>华语讲解</h3><ol>
+   <li>把三份写成5k、2k、9k。</li>
+   <li>两份较小的是7k。</li>
+   <li>最大的一份比7k多6，所以9k−7k=6。</li>
+   <li>求得k=3，最大部分是9×3=27。</li>
+  </ol></div>
+  <div class="lang ms"><h3>Penerangan Bahasa Melayu</h3><ol>
+   <li>Wakilkan bahagian nisbah sebagai 5k, 2k dan 9k.</li>
+   <li>Jumlah dua bahagian kecil ialah 7k.</li>
+   <li>Bahagian terbesar adalah 6 lebih daripada 7k, maka 9k−7k=6.</li>
+   <li>k=3 dan bahagian terbesar ialah 27.</li>
+  </ol></div>
+  <div class="tip">Ratio unknowns: write each part as ratio number × k.</div>
+ </div>
+</section>
+
+<section class="question">
+ <div class="qhead"><div class="qnum">Q15</div><div class="qtitle">Interest · 利息 · Faedah</div></div>
+ <div class="content">
+  <img class="source-img" src="data:image/png;base64,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" alt="Q15 selling price and loan details">
+  <p><strong>Question:</strong> Hendry pays the down payment using a credit card and pays the balance by monthly instalments. Find the total interest, including the down payment.</p>
+  <p><strong>Soalan:</strong> Hendry membayar wang pendahuluan menggunakan kad kredit dan bakinya secara ansuran. Cari jumlah faedah termasuk wang pendahuluan.</p>
+  <div class="answer">Answer: B · RM396</div>
+  <div class="formula">
+   Selling price = RM5 500<br>
+   Monthly interest rate = 0.6%<br>
+   Period = 12 months<br>
+   Total interest = 5 500 × 0.006 × 12<br>
+   = RM396
+  </div>
+  <div class="lang en"><h3>English Explanation</h3><ol>
+   <li>The question says to include the down payment.</li>
+   <li>Therefore, use the full selling price, RM5 500, as the amount charged.</li>
+   <li>Convert 0.6% to decimal: 0.006.</li>
+   <li>Multiply by 12 months: RM5 500×0.006×12=RM396.</li>
+  </ol></div>
+  <div class="lang zh"><h3>华语讲解</h3><ol>
+   <li>题目说明利息要包括首期付款。</li>
+   <li>所以使用完整售价RM5 500来计算。</li>
+   <li>0.6%=0.006。</li>
+   <li>RM5 500×0.006×12=RM396。</li>
+  </ol></div>
+  <div class="lang ms"><h3>Penerangan Bahasa Melayu</h3><ol>
+   <li>Soalan menyatakan faedah termasuk wang pendahuluan.</li>
+   <li>Oleh itu, gunakan harga jual penuh RM5 500.</li>
+   <li>Tukarkan 0.6% kepada 0.006.</li>
+   <li>RM5 500×0.006×12=RM396.</li>
+  </ol></div>
+  <div class="tip">Monthly interest: Amount × monthly rate × number of months.</div>
+ </div>
+</section>
+</main>
+
+<footer>Form 3 Mathematics · Section A Part 3</footer>
+<script>
+function setLang(lang){
+ document.querySelectorAll('.lang').forEach(el=>{
+  if(lang==='all') el.classList.remove('hidden');
+  else el.classList.toggle('hidden',!el.classList.contains(lang));
+ });
+}
+</script>
+</body>
+</html>
