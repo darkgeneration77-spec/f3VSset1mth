@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form 3 Mathematics — Section A Part 1</title>
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --ink:#18212f;
+      --muted:#667085;
+      --line:#d9e2ef;
+      --accent:#2457d6;
+      --accent-2:#0f766e;
+      --good:#137333;
+      --soft:#eef4ff;
+      --warn:#fff8e7;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial,"Microsoft YaHei","Noto Sans SC",sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.65;
+    }
+    header{
+      background:linear-gradient(135deg,#173b8f,#2457d6);
+      color:white;
+      padding:42px 20px 34px;
+    }
+    header .wrap, main{max-width:1000px;margin:auto}
+    h1{margin:0 0 8px;font-size:clamp(28px,4vw,44px)}
+    .subtitle{opacity:.92;font-size:17px}
+    main{padding:28px 18px 60px}
+    .notice{
+      background:var(--warn);
+      border:1px solid #f2d88f;
+      padding:14px 16px;
+      border-radius:14px;
+      margin-bottom:22px;
+    }
+    .question{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      margin:20px 0;
+      overflow:hidden;
+      box-shadow:0 7px 22px rgba(31,52,90,.07);
+    }
+    .qhead{
+      padding:18px 22px;
+      background:var(--soft);
+      border-bottom:1px solid var(--line);
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+    .qnum{
+      min-width:48px;height:48px;border-radius:14px;
+      background:var(--accent);color:white;
+      display:grid;place-items:center;font-weight:700;font-size:20px;
+    }
+    .qtitle{font-size:20px;font-weight:700}
+    .content{padding:22px}
+    .answer{
+      display:inline-block;
+      background:#eaf7ed;
+      color:var(--good);
+      border:1px solid #b8dfc1;
+      border-radius:999px;
+      padding:7px 13px;
+      font-weight:700;
+      margin:10px 0 18px;
+    }
+    .lang{
+      border-left:4px solid var(--accent);
+      padding-left:14px;
+      margin:20px 0;
+    }
+    .lang.zh{border-left-color:#c2410c}
+    .lang.ms{border-left-color:var(--accent-2)}
+    .lang h3{margin:0 0 8px;font-size:18px}
+    .formula{
+      background:#f8fafc;
+      border:1px dashed #aebed2;
+      border-radius:12px;
+      padding:12px 14px;
+      font-family:"Cambria Math",serif;
+      font-size:18px;
+      margin:10px 0;
+      overflow-x:auto;
+    }
+    .tip{
+      background:#f0fdf4;
+      border:1px solid #b7e4c2;
+      border-radius:12px;
+      padding:12px 14px;
+      margin-top:16px;
+      font-weight:600;
+    }
+    ol{padding-left:22px;margin:8px 0}
+    li{margin:5px 0}
+    .toolbar{
+      position:sticky;top:0;z-index:5;
+      background:rgba(244,247,251,.95);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+      padding:10px 18px;
+    }
+    .toolbar .inner{
+      max-width:1000px;margin:auto;
+      display:flex;gap:10px;flex-wrap:wrap;
+    }
+    button{
+      border:1px solid #b8c5d8;background:white;color:var(--ink);
+      border-radius:10px;padding:9px 13px;cursor:pointer;font-weight:600;
+    }
+    button:hover{border-color:var(--accent);color:var(--accent)}
+    .hidden{display:none}
+    footer{
+      text-align:center;color:var(--muted);
+      padding:24px 10px 40px;
+    }
+    @media print{
+      .toolbar{display:none}
+      body{background:white}
+      .question{box-shadow:none;break-inside:avoid}
+      header{background:white;color:black;border-bottom:2px solid black}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Form 3 Mathematics</h1>
+      <div class="subtitle">Section A · Part 1 · Questions 1–5</div>
+      <div class="subtitle">English + 华语 + Bahasa Melayu</div>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="inner">
+      <button onclick="setLang('all')">显示全部 / Show All</button>
+      <button onclick="setLang('en')">English</button>
+      <button onclick="setLang('zh')">华语</button>
+      <button onclick="setLang('ms')">Bahasa Melayu</button>
+      <button onclick="window.print()">打印 / Print</button>
+    </div>
+  </div>
+
+  <main>
+    <div class="notice">
+      本页依据上传的题目与答案整理。Q1、Q4 的原图选项未完整显示在文字提取中，因此保留正确选项与解题方法，不擅自补画题图。
+    </div>
+
+    <section class="question">
+      <div class="qhead">
+        <div class="qnum">Q1</div>
+        <div class="qtitle">Comparing Fractions · 比较分数 · Membandingkan Pecahan</div>
+      </div>
+      <div class="content">
+        <p><strong>Question:</strong> Which of the following fractions has the largest value?</p>
+        <p><strong>Soalan:</strong> Antara pecahan berikut, yang manakah mempunyai nilai paling besar?</p>
+        <div class="answer">Answer: B</div>
+
+        <div class="lang en">
+          <h3>English Explanation</h3>
+          <ol>
+            <li>Compare all four fractions.</li>
+            <li>If the denominators are different, change them to a common denominator or convert them to decimals.</li>
+            <li>The fraction with the greatest value is the answer.</li>
+          </ol>
+        </div>
+
+        <div class="lang zh">
+          <h3>华语讲解</h3>
+          <ol>
+            <li>先比较四个分数。</li>
+            <li>分母不同，就通分；也可以转换成小数。</li>
+            <li>数值最大的分数就是答案。</li>
+          </ol>
+        </div>
+
+        <div class="lang ms">
+          <h3>Penerangan Bahasa Melayu</h3>
+          <ol>
+            <li>Bandingkan semua pecahan.</li>
+            <li>Jika penyebut berbeza, samakan penyebut atau tukarkan kepada perpuluhan.</li>
+            <li>Pecahan yang mempunyai nilai paling besar ialah jawapan.</li>
+          </ol>
+        </div>
+
+        <div class="tip">Exam Tip: Different denominators → make them the same first.</div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="qhead">
+        <div class="qnum">Q2</div>
+        <div class="qtitle">Laws of Indices · 指数定律 · Hukum Indeks</div>
+      </div>
+      <div class="content">
+        <p><strong>Question:</strong> Simplify \(3n³ × 3²n⁴\).</p>
+        <p><strong>Soalan:</strong> Permudahkan \(3n³ × 3²n⁴\).</p>
+        <div class="answer">Answer: B</div>
+
+        <div class="formula">3 × 3² = 3³ = 27<br>n³ × n⁴ = n⁷<br>Therefore: 27n⁷</div>
+
+        <div class="lang en">
+          <h3>English Explanation</h3>
+          <ol>
+            <li>Multiply the numerical parts.</li>
+            <li>For the same base, add the indices.</li>
+            <li>So \(n³ × n⁴ = n⁷\).</li>
+            <li>The simplified expression is \(27n⁷\).</li>
+          </ol>
+        </div>
+
+        <div class="lang zh">
+          <h3>华语讲解</h3>
+          <ol>
+            <li>先计算数字部分。</li>
+            <li>底数相同，指数相加。</li>
+            <li>\(n³ × n⁴ = n⁷\)。</li>
+            <li>最简答案是 \(27n⁷\)。</li>
+          </ol>
+        </div>
+
+        <div class="lang ms">
+          <h3>Penerangan Bahasa Melayu</h3>
+          <ol>
+            <li>Darab bahagian nombor dahulu.</li>
+            <li>Jika asas sama, tambah indeks.</li>
+            <li>\(n³ × n⁴ = n⁷\).</li>
+            <li>Ungkapan ringkas ialah \(27n⁷\).</li>
+          </ol>
+        </div>
+
+        <div class="tip">口诀：同底相乘，指数相加。</div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="qhead">
+        <div class="qnum">Q3</div>
+        <div class="qtitle">Factorisation · 因式分解 · Pemfaktoran</div>
+      </div>
+      <div class="content">
+        <p><strong>Question:</strong> Given \(x² + 5x − 6 = (x+p)(x+q)\), find p and q.</p>
+        <p><strong>Soalan:</strong> Diberi \(x² + 5x − 6 = (x+p)(x+q)\), cari nilai p dan q.</p>
+        <div class="answer">Answer: A · p = 6, q = −1</div>
+
+        <div class="formula">
+          6 × (−1) = −6<br>
+          6 + (−1) = 5<br>
+          x² + 5x − 6 = (x+6)(x−1)
+        </div>
+
+        <div class="lang en">
+          <h3>English Explanation</h3>
+          <ol>
+            <li>Find two numbers whose product is −6.</li>
+            <li>The same two numbers must add up to 5.</li>
+            <li>The numbers are 6 and −1.</li>
+            <li>Therefore, \(p=6\) and \(q=-1\).</li>
+          </ol>
+        </div>
+
+        <div class="lang zh">
+          <h3>华语讲解</h3>
+          <ol>
+            <li>找两个数，相乘得到 −6。</li>
+            <li>同样两个数，相加得到 5。</li>
+            <li>这两个数是 6 和 −1。</li>
+            <li>所以 \(p=6\)，\(q=-1\)。</li>
+          </ol>
+        </div>
+
+        <div class="lang ms">
+          <h3>Penerangan Bahasa Melayu</h3>
+          <ol>
+            <li>Cari dua nombor yang hasil darabnya −6.</li>
+            <li>Jumlah dua nombor itu mestilah 5.</li>
+            <li>Nombornya ialah 6 dan −1.</li>
+            <li>Maka \(p=6\) dan \(q=-1\).</li>
+          </ol>
+        </div>
+
+        <div class="tip">Exam Tip: Multiply = constant term; Add = middle coefficient.</div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="qhead">
+        <div class="qnum">Q4</div>
+        <div class="qtitle">Parallel Lines · 平行线角 · Sudut Garis Selari</div>
+      </div>
+      <div class="content">
+        <p><strong>Question:</strong> In Diagram 1, ST is parallel to PR. Find ∠PRT.</p>
+        <p><strong>Soalan:</strong> Dalam Rajah 1, garis ST selari dengan garis PR. Cari ∠PRT.</p>
+        <div class="answer">Answer: C · 3x</div>
+
+        <div class="lang en">
+          <h3>English Explanation</h3>
+          <ol>
+            <li>Identify the parallel lines: \(ST ∥ PR\).</li>
+            <li>Use the appropriate parallel-line angle rule.</li>
+            <li>The corresponding or alternate angle shown is \(3x\).</li>
+            <li>Therefore, \(\angle PRT = 3x\).</li>
+          </ol>
+        </div>
+
+        <div class="lang zh">
+          <h3>华语讲解</h3>
+          <ol>
+            <li>先确认 \(ST ∥ PR\)。</li>
+            <li>使用平行线角度性质。</li>
+            <li>图中的对应角或内错角相等。</li>
+            <li>所以 \(\angle PRT = 3x\)。</li>
+          </ol>
+        </div>
+
+        <div class="lang ms">
+          <h3>Penerangan Bahasa Melayu</h3>
+          <ol>
+            <li>Kenal pasti bahawa \(ST ∥ PR\).</li>
+            <li>Gunakan hukum sudut bagi garis selari.</li>
+            <li>Sudut sepadan atau sudut berselang-seli adalah sama.</li>
+            <li>Maka \(\angle PRT = 3x\).</li>
+          </ol>
+        </div>
+
+        <div class="tip">看到平行线：先找对应角、内错角或同旁内角。</div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="qhead">
+        <div class="qnum">Q5</div>
+        <div class="qtitle">Ratio · 比例 · Nisbah</div>
+      </div>
+      <div class="content">
+        <p><strong>Question:</strong> 300 apples are divided among X, Y and Z in the ratio 2:3:1. Lily removes 25 apples from X and 25 from Y, then puts all 50 into Z. Find the new ratio.</p>
+        <div class="answer">Answer: D · 3 : 5 : 4</div>
+
+        <div class="formula">
+          Total parts = 2+3+1 = 6<br>
+          One part = 300 ÷ 6 = 50<br>
+          X=100, Y=150, Z=50<br>
+          New values: X=75, Y=125, Z=100<br>
+          75:125:100 ÷ 25 = 3:5:4
+        </div>
+
+        <div class="lang en">
+          <h3>English Explanation</h3>
+          <ol>
+            <li>Add the ratio parts: \(2+3+1=6\).</li>
+            <li>Find one part: \(300÷6=50\).</li>
+            <li>Original amounts: X=100, Y=150, Z=50.</li>
+            <li>After transfer: X=75, Y=125, Z=100.</li>
+            <li>Simplify by dividing all numbers by 25.</li>
+          </ol>
+        </div>
+
+        <div class="lang zh">
+          <h3>华语讲解</h3>
+          <ol>
+            <li>比例总份数：\(2+3+1=6\)。</li>
+            <li>一份：\(300÷6=50\)。</li>
+            <li>原本：X=100，Y=150，Z=50。</li>
+            <li>转移后：X=75，Y=125，Z=100。</li>
+            <li>全部除以25，得到 \(3:5:4\)。</li>
+          </ol>
+        </div>
+
+        <div class="lang ms">
+          <h3>Penerangan Bahasa Melayu</h3>
+          <ol>
+            <li>Jumlah bahagian nisbah: \(2+3+1=6\).</li>
+            <li>Satu bahagian: \(300÷6=50\).</li>
+            <li>Bilangan asal: X=100, Y=150, Z=50.</li>
+            <li>Selepas pemindahan: X=75, Y=125, Z=100.</li>
+            <li>Bahagikan semuanya dengan 25 untuk mendapat \(3:5:4\).</li>
+          </ol>
+        </div>
+
+        <div class="tip">Ratio steps: Find one part → update quantities → simplify.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Form 3 Mathematics · Section A Part 1</footer>
+
+  <script>
+    function setLang(lang){
+      document.querySelectorAll('.lang').forEach(el=>{
+        if(lang==='all') el.classList.remove('hidden');
+        else el.classList.toggle('hidden', !el.classList.contains(lang));
+      });
+    }
+  </script>
+</body>
+</html>
